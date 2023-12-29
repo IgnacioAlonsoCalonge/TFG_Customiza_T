@@ -1,0 +1,92 @@
+.section_tarjeta{
+    width: 75%;
+    height: 300px;
+    border: 2px rgb(148, 148, 148) solid;
+    display: flex;
+    position: relative;
+    margin-right: 0;
+    margin-top: 1.5rem;
+    box-shadow: 20px 0px 30px -15px black;
+}
+
+
+.tarjetas_descripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.producto_final{
+    width: 60%;
+    position: relative;
+}
+
+.foto_producto_final_estampado{
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+
+.foto_producto_final_camiseta{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.tarjetas_title_cruz{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bebas Neue";
+    color: rgb(44, 43, 43);
+    letter-spacing: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.cantidad_precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cantidad_precio h4{
+    font-size: 1.3rem;
+}
+
+.cerrar{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.cerrar::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background:rgb(95, 95, 95);
+    transform: rotate(45deg) translatey(-50%);
+}
+
+.cerrar::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background:rgb(95, 95, 95);
+    transform: rotate(-45deg) translatey(-50%);
+}
